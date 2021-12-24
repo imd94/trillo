@@ -1,0 +1,42 @@
+
+.search {
+    width: 100%;
+    order: 3;
+    background-color: $greyLight3;
+    margin-bottom: 1rem;
+    @include xs {
+        order: 2;
+        width: 40%;
+        margin-bottom: 0;
+        background-color: transparent;
+    }
+
+    &__form {
+        display: flex;
+    }
+
+    &__field {
+        width: 90%;
+        margin: 0 auto;
+        padding: .825rem 2rem;
+        border-radius: 20rem;
+        border: none;
+        background-color: $greyLight3;
+        font-size: 1.4rem;
+        transition: .2s all ease;
+
+        &:focus {
+            outline: none;
+            width: 100%;
+            background-color: rgba($greyLight4, .4);
+        }
+
+        &::-webkit-input-placeholder {
+            color: $greyLight4;
+        }
+    }
+
+    &__label {
+        display: none;
+    }
+}

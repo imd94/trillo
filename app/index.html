@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link href="assets/vendor/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="assets/images/img/favicon.png">
+    
+    <title>trillo &mdash; Your all-in-one booking app</title>
+</head>
+<body>
+
+    <main class="container">
+        <header class="main-header">
+            <div class="main-header__logo">
+                <img class="main-header__logo-image" src="assets/images/logo.png" alt="Trillo Logo">
+            </div>
+
+            <div class="search">
+                <form class="search__form" action="" method="POST">
+                    <label class="search__label" for="search-field">Search Hotels</label>
+                    <input type="search" class="search__field" id="search-field" name="search-field" placeholder="Search Hotels">
+                </form>
+            </div>
+
+            <nav class="notifications-nav">
+                <ul class="notifications-nav__list">
+                    <li class="notifications-nav__item">
+                        <a class="notifications-nav__link notifications-nav__link--notify" href="#">
+                            <span class="notifications-nav__icon"><i class="far fa-bell"></i></span>
+                            <span class="notifications-nav__counter notifications-nav__counter--notify">8</span>
+                        </a>
+                    </li>
+
+                    <li class="notifications-nav__item">
+                        <a class="notifications-nav__link notifications-nav__link--chat" href="#">
+                            <span class="notifications-nav__icon"><i class="far fa-comment"></i></span>
+                            <span class="notifications-nav__counter notifications-nav__counter--chat">5</span>
+                        </a>
+                    </li>
+
+                    <li class="notifications-nav__item">
+                        <a class="notifications-nav__link notifications-nav__link--user" href="#">
+                            <img class="notifications-nav__user-img" src="assets/images/admin.png" alt="User">
+                            <span class="notifications-nav__user-name">Ivan</span> 
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </main>
+    
+<script src="bundled.js"></script>
+</body>
+</html>

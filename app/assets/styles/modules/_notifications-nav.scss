@@ -1,0 +1,58 @@
+
+.notifications-nav {
+    margin-right: 1rem;
+
+    @include xs {
+        order: 3;
+    }
+    
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        display: block;
+        position: relative;
+        color: $greyDark2;
+        font-weight: 300;
+        padding: 2rem 1.8rem;
+
+        &--user {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-top: 1.4rem;
+            padding-bottom: 1.4rem;
+        }
+    }
+
+    &__icon {
+        font-size: 2rem;
+        opacity: .6;
+    }
+
+    &__counter {
+        position: absolute;
+        top: .75rem;
+        left: 2.25rem;
+        width: 2rem;
+        height: 2rem;
+        line-height: 2rem;
+        text-align: center;
+        background-color: $primary;
+        border-radius: 100%;
+        color: $white;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    &__user-img {
+        display: inline-block;
+        width: 3.75rem;
+        height: 3.75rem;
+        margin-right: 1rem;
+    }
+}
