@@ -1,30 +1,48 @@
 .main-nav {
-    flex: 1 1 18%;
+    flex: 0 0 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     background-color: $greyDark1;
+    @include sm {
+        flex: 1 1 18%;
+        flex-direction: column;
+    }
 
     &__list {
-        margin-top: 3rem;
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex: 1 1 100%;
+        @include sm {
+            margin-top: 3rem;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
     }
 
     &__item {
+        flex: 1 1 25%;
+        @include sm {
+            flex: 0 0 auto;
+        }
         &:not(:last-child) {
-            margin-bottom: 1rem;
+            margin-bottom: 0;
+            @include sm {
+                margin-bottom: 1rem;
+            }
         }
     }
 
     &__link {
         color: $white;
         display: block;
-        padding: 1.8rem 1rem 1.8rem 7rem;
+        padding: 1.8rem 1rem 1.8rem 30%;
         text-transform: uppercase;
         font-size: 1.4rem;
         position: relative;
         z-index: 1;
-        /* transition: .25s all ease;
-        transition-delay: .3s; */
 
         &--active {
             background-color: $primaryLight;
