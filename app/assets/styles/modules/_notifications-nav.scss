@@ -1,6 +1,5 @@
 
 .notifications-nav {
-    margin-right: 1rem;
 
     @include xs {
         order: 3;
@@ -19,6 +18,11 @@
         color: $greyDark2;
         font-weight: 300;
         padding: 2rem 1.8rem;
+        transition: .25s all ease;
+
+        &:hover {
+            background-color: $greyLight3;
+        }
 
         &--user {
             display: flex;

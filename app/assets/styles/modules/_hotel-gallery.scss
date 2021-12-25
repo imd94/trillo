@@ -1,0 +1,9 @@
+
+.hotel-gallery {
+    display: flex;
+    flex-direction: row;
+
+    &__cap {
+        display: none;
+    }
+}

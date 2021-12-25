@@ -1,0 +1,14 @@
+.trillo-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $greyLight3;
+
+    &__one {
+        padding: 1.5rem 3rem;
+        color: $greyDark2;
+        font-weight: 300;
+        font-size: 2.25rem;
+    }
+}

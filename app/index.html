@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <main class="container">
+    <div class="container">
         <header class="main-header">
             <div class="main-header__logo">
                 <img class="main-header__logo-image" src="assets/images/logo.png" alt="Trillo Logo">
@@ -48,9 +48,78 @@
                         </a>
                     </li>
                 </ul>
+            </nav> <!-- end notifications-nav -->
+        </header> <!-- end main-header -->
+
+        <div class="main-content-wrapper">
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link main-nav__link--active">Hotel</a>
+                    </li>
+
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link">Flight</a>
+                    </li>
+
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link">Car Rental</a>
+                    </li>
+
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link">Tours</a>
+                    </li>                              
+                </ul>
+
+                <div class="legal main-nav__legal">&copy; 2017 by trillo. All rights reserved.</div>
             </nav>
-        </header>
-    </main>
+
+            <main class="main-content">
+                <header class="trillo-header">
+                    <div class="hotel-gallery">
+                        <figure class="hotel-gallery__fig">
+                            <img class="hotel-gallery__img" src="assets/images/hotel-1.jpg" alt="Image 1">
+                            <figcaption class="hotel-gallery__cap">Fig caption 01</figcaption>
+                        </figure>
+
+                        <figure class="hotel-gallery__fig">
+                            <img class="hotel-gallery__img" src="assets/images/hotel-2.jpg" alt="Image 2">
+                            <figcaption class="hotel-gallery__cap">Fig caption 02</figcaption>
+                        </figure>
+
+                        <figure class="hotel-gallery__fig">
+                            <img class="hotel-gallery__img" src="assets/images/hotel-3.jpg" alt="Image 3">
+                            <figcaption class="hotel-gallery__cap">Fig caption 03</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="trillo-heading">
+                        <h1 class="trillo-heading__one">
+                            HOTEL LAS PALMAS
+                        </h1>
+
+                        <div class="hotel-info">
+                            <div class="hotel-info__place">
+                                <a class="hotel-info__place-link" href="#">Albufeira, Portugal</a>
+                            </div>
+
+                            <div class="hotel-info__meta">
+                                <span class="hotel-info__rating">8.6</span>
+                                <span class="hotel-info__votes">429 VOTES</span>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </main>
+        </div>
+
+
+
+        <footer class="main-footer">
+            <p class="legal">&copy; 2017 by trillo. All rights reserved.</p>
+        </footer>
+
+    </div> <!-- end container -->
     
 <script src="bundled.js"></script>
 </body>

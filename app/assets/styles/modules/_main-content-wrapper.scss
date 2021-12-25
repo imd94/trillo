@@ -1,0 +1,8 @@
+
+.main-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    @include sm {
+        flex-direction: row;
+    }
+}
