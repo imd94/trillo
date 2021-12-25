@@ -23,7 +23,7 @@
     }
 
     &__item {
-        flex: 1 1 25%;
+        flex: 1 1 auto;
         @include sm {
             flex: 0 0 auto;
         }

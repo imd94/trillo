@@ -1,0 +1,42 @@
+.hotel-about {
+    flex: 0 1 68%;
+    box-shadow: 0 2rem 5rem 0 rgba($greyLight4, .5);
+    padding: 3rem;
+
+    &__desc {
+        border-bottom: 1px solid $greyLight3;
+        padding-bottom: 3rem;
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__recommends {
+        margin-bottom: 0;
+        font-size: 1.3rem;
+    }
+
+    &__friends {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    &__friends-img {
+        width: 4.6rem;
+        height: 4.6rem;
+        border-radius: 100%;
+        border: .2rem solid $white;
+        &:not(:first-child) {
+            margin-left: -2rem;
+        }
+    }
+}

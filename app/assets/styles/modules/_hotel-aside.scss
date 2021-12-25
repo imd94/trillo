@@ -1,0 +1,61 @@
+.hotel-aside {
+    flex: 0 1 27%;
+
+    &__block {
+        box-shadow: 0 2rem 5rem 0 rgba($greyLight4, .5);
+        padding: 3rem;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: '\f10d';
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900;
+            font-size: 5rem;
+            color: rgba($greyLight4, .3);
+            position: absolute;
+            top: -.7rem;
+            left: -.3rem;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__quote {
+        margin-bottom: 2rem;
+    }
+
+    &__review-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__review-user-name {
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    &__review-date {
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+
+    &__review-rating {
+        font-size: 2.4rem;
+        color: $primary;
+        font-weight: 300;
+    }
+
+    &__review-img {
+        width: 4.6rem;
+        height: 4.6rem;
+        border-radius: 100%;
+        border: .2rem solid $white;
+    }
+}
